@@ -38,9 +38,3 @@ RUN cp -rp /images /opt/fog/default/
 RUN touch /INIT
 ADD assets/entry.sh .
 CMD bash entry.sh
-
-
-
-
-
-
