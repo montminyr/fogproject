@@ -66,6 +66,10 @@ sed -i "s~header.*~header('Location: $REDIRECT');~g" /var/www/index.php
 /etc/init.d/FOGSnapinHash start
 /etc/init.d/FOGSnapinReplicator start
 
+# NFS 
+rpcbind
+service nfs-kernel-server start
+
 if [ -f /INIT ] ; then
 
   echo ""
