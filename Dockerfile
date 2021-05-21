@@ -11,7 +11,7 @@ RUN wget https://github.com/FOGProject/fogproject/archive/${VERSION}.tar.gz \
  && tar xvfz ${VERSION}.tar.gz \
  && cd fogproject-${VERSION}/bin \
  && mkdir -p /backup \
- && bash ./installfog.sh  --autoaccept
+ && bash ./installfog.sh  -y
 
 # remove obsolet pifdiles
 #RUN rm -f /var/run/fog/FOG*
